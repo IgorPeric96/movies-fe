@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import MovieService from '../services/movies.service';
 
 function AppMovies() {
-    const [movies, setMovies] = useState();
+    const [movies, setMovies] = useState([]);
 
     useEffect(() =>{
         const fetchMovies = async () => {
